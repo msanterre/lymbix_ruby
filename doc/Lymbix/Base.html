@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Class: Lymbix::Base</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen" charset="utf-8" />
+<link rel="stylesheet" href="../css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '..';
+  if (relpath != '') relpath += '/';
+</script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (B)</a> &raquo; 
+    <span class='title'><span class='object_link'><a href="../Lymbix.html" title="Lymbix (module)">Lymbix</a></span></span>
+     &raquo; 
+    <span class="title">Base</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  <a id="class_list_link" href="#">Class List</a>
+  <a id="method_list_link" href="#">Method List</a>
+  <a id ="file_list_link" href="#">File List</a>
+</div>
+
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: Lymbix::Base
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">Lymbix::Base</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/lymbix/base.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#api_version-instance_method" title="#api_version (instance method)">- (Object) <strong>api_version</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>API version to use.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#auth_key-instance_method" title="#auth_key (instance method)">- (Object) <strong>auth_key</strong> </a>
+    
+
+    
+  </span>
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The user’s authentication key.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#flag_response-instance_method" title="#flag_response (instance method)">- (Object) <strong>flag_response</strong>(reference_id, phrase, api_method_requested, api_version, callback_url = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Flags a phrase to be re-evaluated.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Base) <strong>initialize</strong>(auth_key) </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of Base.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tonalize-instance_method" title="#tonalize (instance method)">- (Object) <strong>tonalize</strong>(article, return_fields = nil, accept_type = nil, article_reference_id = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Tonalizes text using version 2.1,2.2 of ToneAPI.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tonalize_article-instance_method" title="#tonalize_article (instance method)">- (Object) <strong>tonalize_article</strong>(article, accept_type = &quot;application/json&quot;) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Tonalizes text using version 2.0 of ToneAPI.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tonalize_detailed-instance_method" title="#tonalize_detailed (instance method)">- (Object) <strong>tonalize_detailed</strong>(article, return_fields = nil, accept_type = nil, article_reference_id = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Tonalizes article using version 2.1 of ToneAPI.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#tonalize_multiple-instance_method" title="#tonalize_multiple (instance method)">- (Object) <strong>tonalize_multiple</strong>(articles, return_fields = nil, accept_type = nil, article_reference_ids = nil) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Tonalizes mutliple articles using version 2.1 of ToneAPI.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="Lymbix::Base (class)">Base</a></span></tt>) <strong>initialize</strong>(auth_key) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>A new instance of Base</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+16
+17
+18
+19</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lymbix/base.rb', line 16</span>
+
+<span class='def def kw'>def</span> <span class='initialize identifier id'>initialize</span><span class='lparen token'>(</span><span class='auth_key identifier id'>auth_key</span><span class='rparen token'>)</span>
+    <span class='@auth_key ivar id'>@auth_key</span> <span class='assign token'>=</span> <span class='auth_key identifier id'>auth_key</span>
+    <span class='@api_version ivar id'>@api_version</span> <span class='assign token'>=</span> <span class='float val'>2.1</span> 
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="api_version=-instance_method"></span>
+      <span id="api_version-instance_method"></span>
+      <div class="method_details first">
+  <p class="signature first" id="api_version-instance_method">
+  
+    - (<tt>Object</tt>) <strong>api_version</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>API version to use</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lymbix/base.rb', line 14</span>
+
+<span class='def def kw'>def</span> <span class='api_version identifier id'>api_version</span>
+  <span class='@api_version ivar id'>@api_version</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="auth_key=-instance_method"></span>
+      <span id="auth_key-instance_method"></span>
+      <div class="method_details ">
+  <p class="signature " id="auth_key-instance_method">
+  
+    - (<tt>Object</tt>) <strong>auth_key</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>The user’s authentication key</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+12
+13
+14</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lymbix/base.rb', line 12</span>
+
+<span class='def def kw'>def</span> <span class='auth_key identifier id'>auth_key</span>
+  <span class='@auth_key ivar id'>@auth_key</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="flag_response-instance_method">
+  
+    - (<tt>Object</tt>) <strong>flag_response</strong>(reference_id, phrase, api_method_requested, api_version, callback_url = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Flags a phrase to be re-evaluated</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+54
+55
+56</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lymbix/base.rb', line 54</span>
+
+<span class='def def kw'>def</span> <span class='flag_response identifier id'>flag_response</span><span class='lparen token'>(</span><span class='reference_id identifier id'>reference_id</span><span class='comma token'>,</span> <span class='phrase identifier id'>phrase</span><span class='comma token'>,</span> <span class='api_method_requested identifier id'>api_method_requested</span><span class='comma token'>,</span> <span class='api_version identifier id'>api_version</span><span class='comma token'>,</span> <span class='callback_url identifier id'>callback_url</span> <span class='assign token'>=</span> <span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='symbol val'>:post</span><span class='comma token'>,</span> <span class='string val'>'flag_response'</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='symbol val'>:reference_id</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='reference_id identifier id'>reference_id</span><span class='comma token'>,</span> <span class='symbol val'>:phrase</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='phrase identifier id'>phrase</span><span class='comma token'>,</span> <span class='symbol val'>:api_method_requested</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='api_method_requested identifier id'>api_method_requested</span><span class='comma token'>,</span> <span class='symbol val'>:api_version</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='api_version identifier id'>api_version</span><span class='comma token'>,</span> <span class='symbol val'>:callback_url</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='callback_url identifier id'>callback_url</span><span class='rbrace token'>}</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='data identifier id'>data</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tonalize-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tonalize</strong>(article, return_fields = nil, accept_type = nil, article_reference_id = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Tonalizes text using version 2.1,2.2 of ToneAPI</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24
+25
+26
+27</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lymbix/base.rb', line 22</span>
+
+<span class='def def kw'>def</span> <span class='tonalize identifier id'>tonalize</span><span class='lparen token'>(</span><span class='article identifier id'>article</span><span class='comma token'>,</span> <span class='return_fields identifier id'>return_fields</span> <span class='assign token'>=</span> <span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='accept_type identifier id'>accept_type</span> <span class='assign token'>=</span> <span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='article_reference_id identifier id'>article_reference_id</span> <span class='assign token'>=</span> <span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='return_fields identifier id'>return_fields</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='return_fields identifier id'>return_fields</span> <span class='eq op'>==</span> <span class='nil nil kw'>nil</span>
+  <span class='accept_type identifier id'>accept_type</span> <span class='assign token'>=</span> <span class='string val'>&quot;application/json&quot;</span> <span class='if if_mod kw'>if</span> <span class='accept_type identifier id'>accept_type</span> <span class='eq op'>==</span> <span class='nil nil kw'>nil</span>
+  <span class='article_reference_id identifier id'>article_reference_id</span> <span class='assign token'>=</span> <span class='string val'>&quot;&quot;</span> <span class='if if_mod kw'>if</span> <span class='article_reference_id identifier id'>article_reference_id</span> <span class='eq op'>==</span> <span class='nil nil kw'>nil</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='symbol val'>:post</span><span class='comma token'>,</span> <span class='string val'>'tonalize'</span><span class='comma token'>,</span><span class='lbrace token'>{</span><span class='symbol val'>:article</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='article identifier id'>article</span><span class='comma token'>,</span> <span class='symbol val'>:return_fields</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='return_fields identifier id'>return_fields</span><span class='dot token'>.</span><span class='to_json identifier id'>to_json</span><span class='comma token'>,</span> <span class='symbol val'>:reference_id</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='article_reference_id identifier id'>article_reference_id</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rbrace token'>}</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='symbol val'>:accept</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='accept_type identifier id'>accept_type</span><span class='rbrace token'>}</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='data identifier id'>data</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tonalize_article-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tonalize_article</strong>(article, accept_type = &quot;application/json&quot;) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Tonalizes text using version 2.0 of ToneAPI</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+30
+31
+32
+33</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lymbix/base.rb', line 30</span>
+
+<span class='def def kw'>def</span> <span class='tonalize_article identifier id'>tonalize_article</span><span class='lparen token'>(</span><span class='article identifier id'>article</span><span class='comma token'>,</span> <span class='accept_type identifier id'>accept_type</span> <span class='assign token'>=</span> <span class='string val'>&quot;application/json&quot;</span><span class='rparen token'>)</span>
+  <span class='@api_version ivar id'>@api_version</span> <span class='assign token'>=</span> <span class='float val'>2.0</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='symbol val'>:post</span><span class='comma token'>,</span> <span class='string val'>'tonalize_article'</span><span class='comma token'>,</span><span class='lbrace token'>{</span><span class='symbol val'>:article</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='article identifier id'>article</span><span class='rbrace token'>}</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='symbol val'>:accept</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='accept_type identifier id'>accept_type</span><span class='rbrace token'>}</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='data identifier id'>data</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tonalize_detailed-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tonalize_detailed</strong>(article, return_fields = nil, accept_type = nil, article_reference_id = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Tonalizes article using version 2.1 of ToneAPI. With the return_fields
+param you can now specify which field to get back from the API. The
+detailed response includes the tonalization data for the article and all
+sentences found in the article</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+46
+47
+48
+49
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lymbix/base.rb', line 46</span>
+
+<span class='def def kw'>def</span> <span class='tonalize_detailed identifier id'>tonalize_detailed</span><span class='lparen token'>(</span><span class='article identifier id'>article</span><span class='comma token'>,</span> <span class='return_fields identifier id'>return_fields</span> <span class='assign token'>=</span> <span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='accept_type identifier id'>accept_type</span> <span class='assign token'>=</span> <span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='article_reference_id identifier id'>article_reference_id</span> <span class='assign token'>=</span> <span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='return_fields identifier id'>return_fields</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='return_fields identifier id'>return_fields</span> <span class='eq op'>==</span> <span class='nil nil kw'>nil</span>
+  <span class='accept_type identifier id'>accept_type</span> <span class='assign token'>=</span> <span class='string val'>&quot;application/json&quot;</span> <span class='if if_mod kw'>if</span> <span class='accept_type identifier id'>accept_type</span> <span class='eq op'>==</span> <span class='nil nil kw'>nil</span>
+  <span class='article_reference_id identifier id'>article_reference_id</span> <span class='assign token'>=</span> <span class='string val'>&quot;&quot;</span> <span class='if if_mod kw'>if</span> <span class='article_reference_id identifier id'>article_reference_id</span> <span class='eq op'>==</span> <span class='nil nil kw'>nil</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='symbol val'>:post</span><span class='comma token'>,</span> <span class='string val'>'tonalize_detailed'</span><span class='comma token'>,</span><span class='lbrace token'>{</span><span class='symbol val'>:article</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='article identifier id'>article</span><span class='comma token'>,</span> <span class='symbol val'>:return_fields</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='return_fields identifier id'>return_fields</span><span class='dot token'>.</span><span class='to_json identifier id'>to_json</span><span class='comma token'>,</span> <span class='symbol val'>:article_reference_id</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='article_reference_id identifier id'>article_reference_id</span><span class='rbrace token'>}</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='symbol val'>:accept</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='accept_type identifier id'>accept_type</span><span class='rbrace token'>}</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='data identifier id'>data</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="tonalize_multiple-instance_method">
+  
+    - (<tt>Object</tt>) <strong>tonalize_multiple</strong>(articles, return_fields = nil, accept_type = nil, article_reference_ids = nil) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    
+<p>Tonalizes mutliple articles using version 2.1 of ToneAPI. With the
+return_fields param you can now specify which field to get back from the
+API.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38
+39
+40
+41
+42</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/lymbix/base.rb', line 36</span>
+
+<span class='def def kw'>def</span> <span class='tonalize_multiple identifier id'>tonalize_multiple</span><span class='lparen token'>(</span><span class='articles identifier id'>articles</span><span class='comma token'>,</span> <span class='return_fields identifier id'>return_fields</span> <span class='assign token'>=</span> <span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='accept_type identifier id'>accept_type</span> <span class='assign token'>=</span> <span class='nil nil kw'>nil</span><span class='comma token'>,</span> <span class='article_reference_ids identifier id'>article_reference_ids</span> <span class='assign token'>=</span> <span class='nil nil kw'>nil</span><span class='rparen token'>)</span>
+  <span class='return_fields identifier id'>return_fields</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='return_fields identifier id'>return_fields</span> <span class='eq op'>==</span> <span class='nil nil kw'>nil</span>
+  <span class='accept_type identifier id'>accept_type</span> <span class='assign token'>=</span> <span class='string val'>&quot;application/json&quot;</span> <span class='if if_mod kw'>if</span> <span class='accept_type identifier id'>accept_type</span> <span class='eq op'>==</span> <span class='nil nil kw'>nil</span>
+  <span class='article_reference_ids identifier id'>article_reference_ids</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span> <span class='if if_mod kw'>if</span> <span class='article_reference_ids identifier id'>article_reference_ids</span> <span class='eq op'>==</span> <span class='nil nil kw'>nil</span>
+  <span class='article_reference_ids identifier id'>article_reference_ids</span><span class='dot token'>.</span><span class='each_with_index identifier id'>each_with_index</span> <span class='lbrace token'>{</span><span class='bitor op'>|</span><span class='article identifier id'>article</span><span class='comma token'>,</span><span class='index identifier id'>index</span><span class='bitor op'>|</span> <span class='article_reference_ids identifier id'>article_reference_ids</span><span class='lbrack token'>[</span><span class='index identifier id'>index</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='article identifier id'>article</span><span class='dot token'>.</span><span class='to_s identifier id'>to_s</span><span class='rbrace token'>}</span> <span class='if if_mod kw'>if</span> <span class='article_reference_ids identifier id'>article_reference_ids</span><span class='dot token'>.</span><span class='size identifier id'>size</span> <span class='gt op'>&gt;</span> <span class='integer val'>0</span>
+  <span class='response identifier id'>response</span> <span class='assign token'>=</span> <span class='request identifier id'>request</span><span class='lparen token'>(</span><span class='symbol val'>:post</span><span class='comma token'>,</span> <span class='string val'>'tonalize_multiple'</span><span class='comma token'>,</span><span class='lbrace token'>{</span><span class='symbol val'>:articles</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='articles identifier id'>articles</span><span class='dot token'>.</span><span class='to_json identifier id'>to_json</span><span class='comma token'>,</span> <span class='symbol val'>:return_fields</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='return_fields identifier id'>return_fields</span><span class='dot token'>.</span><span class='to_json identifier id'>to_json</span><span class='comma token'>,</span> <span class='symbol val'>:article_reference_ids</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='article_reference_ids identifier id'>article_reference_ids</span><span class='dot token'>.</span><span class='to_json identifier id'>to_json</span><span class='rbrace token'>}</span><span class='comma token'>,</span> <span class='lbrace token'>{</span><span class='symbol val'>:accept</span> <span class='assign token'>=</span><span class='gt op'>&gt;</span> <span class='accept_type identifier id'>accept_type</span><span class='rbrace token'>}</span><span class='rparen token'>)</span><span class='dot token'>.</span><span class='data identifier id'>data</span>
+<span class='end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Wed Apr 13 16:44:55 2011 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.6.7 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>

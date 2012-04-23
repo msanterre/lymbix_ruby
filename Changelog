@@ -1,0 +1,6 @@
+v0.4.4 - removed methods not used.
+v0.4.3 - can now specify which api_version to use
+v0.4.2 - added reference_id to all methods using version 2.2 BETA
+v0.4.1 - added reference_id param to flag_response
+v0.4.0 - re-factored whole gem, implemented methods for 2.1 version 
+v0.3.7 - added endpoint attribute to Base for companies implementation
