@@ -1,3 +1,4 @@
+v0.4.5 - fixed rest-client timeout issue
 v0.4.4 - removed methods not used.
 v0.4.3 - can now specify which api_version to use
 v0.4.2 - added reference_id to all methods using version 2.2 BETA
