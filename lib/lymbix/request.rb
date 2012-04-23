@@ -15,8 +15,8 @@ module Lymbix
     
     def connection
       options = {}
-      options[:timeout] = 0
-      options[:headers] = {:USER_AGENT => "Lymbix Gem - 0.4.4", :accept => self.header_hash[:accept_type], :AUTHENTICATION => self.header_hash[:auth_key], :VERSION => self.header_hash[:version]}            
+      options[:timeout] = 60
+      options[:headers] = {:USER_AGENT => "Lymbix Gem - 0.4.5", :accept => self.header_hash[:accept_type], :AUTHENTICATION => self.header_hash[:auth_key], :VERSION => self.header_hash[:version]}            
       RestClient::Resource.new(self.url, options)
     end
     

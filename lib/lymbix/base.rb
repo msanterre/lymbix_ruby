@@ -15,7 +15,7 @@ To begin using the base class, you must get your authentication key provided fro
     
     def initialize(auth_key)
         @auth_key = auth_key
-        @api_version = 2.1 
+        @api_version = 2.3
     end
      
     # Tonalizes text using version 2.1,2.2 of ToneAPI
@@ -28,7 +28,6 @@ To begin using the base class, you must get your authentication key provided fro
     
     # Tonalizes text using version 2.0 of ToneAPI
     def tonalize_article(article, accept_type = "application/json")
-      @api_version = 2.0
       response = request(:post, 'tonalize_article',{:article => article}, {:accept => accept_type}).data
     end
         
